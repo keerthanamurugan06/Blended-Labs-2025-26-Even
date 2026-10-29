@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: M KEERTHANA
+* **Register Number**:212225040185
+* **Date of Submission**:29-10-2026
 
 ---
 
@@ -85,33 +85,37 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. Created a VPC named `lab-vpc` with a public subnet, a private subnet, an Internet Gateway, a NAT Gateway, and route tables.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+2. Created two additional subnets, `lab-subnet-public2` and `lab-subnet-private2`, in a second Availability Zone and associated them with the appropriate route tables.
 
+3. Created a security group named `Web Security Group` and configured an inbound HTTP rule to allow web traffic on port 80.
+
+4. Launched an EC2 instance named `Web Server 1` using Amazon Linux 2023 and the `t2.micro` instance type. Configured the public subnet, enabled the public IP address, selected the security group, and added a user data script to install Apache and the web application.
+
+5. Verified that the EC2 instance was running and accessed the web application through its public DNS address. Confirmed that the webpage displayed the AWS logo and instance metadata.
 ---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: VPC and Subnet Details
 
-(Insert Screenshot Here)
+<img width="1598" height="696" alt="image" src="https://github.com/user-attachments/assets/da452be9-63f4-4ed4-bc1d-3490a5a4aa82" />
+
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-(Insert Screenshot Here)
+<img width="1920" height="1080" alt="Screenshot 2026-10-29 175631" src="https://github.com/user-attachments/assets/ea9046c3-a51b-4a3e-9c25-288ee92f2ffb" />
+
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
 
-(Insert Screenshot Here)
+<img width="1920" height="1080" alt="Screenshot 2026-10-29 175621" src="https://github.com/user-attachments/assets/d03072a1-33ca-49bc-9db3-503e8ee21945" />
+
 
 ---
 
