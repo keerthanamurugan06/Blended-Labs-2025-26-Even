@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: KEERTHANA M
+* **Register Number**: 212225040185
+* **Date of Submission**: 21-11-26
 
 ---
 
@@ -95,34 +95,45 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 ---
 
 ## Workflow (Student Explanation)
+1. Launch an EC2 instance named Web Server.
 
-(Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
 
+2. Check instance status, monitoring, system log and screenshot.
+
+
+
+3. Add HTTP rule and access the web server using its public IP.
+
+
+
+4. Change instance type to t2.small and increase storage to 10 GiB.
+
+
+
+5. Test stop protection, stop the instance and submit the lab.
 ---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
+<img width="1919" height="982" alt="image" src="https://github.com/user-attachments/assets/52ddeb3f-3e59-4a08-b0f9-612aa9e0ac25" />
+
 
 ---
 
 ### Screenshot 2: SSH Connection to Instance
 
-(Insert Screenshot Here)
+<img width="1919" height="982" alt="image" src="https://github.com/user-attachments/assets/91aa7877-6823-41e9-8852-0f243bef0e9d" />
+<img width="1424" height="917" alt="image" src="https://github.com/user-attachments/assets/8cc889e1-6152-4c6b-8db6-c35313e34156" />
 
 ---
 
 ### Screenshot 3: Instance Monitoring / Status
 
-(Insert Screenshot Here)
+<img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/3ad5ac79-f145-4852-a174-3abede450c83" />
+<img width="1905" height="946" alt="image" src="https://github.com/user-attachments/assets/5a17f04a-1d5c-49fc-889b-c2cc19d1669f" />
 
 ---
 
