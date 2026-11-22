@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: KEERTHANA M
+* **Register Number**: 212225040185
+* **Date of Submission**: 22-11-26
 
 ---
 
@@ -78,13 +78,15 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. Create EBS Volume: Create a 1 GiB General Purpose SSD (gp2) volume in the same Availability Zone as the Lab EC2 instance and tag it My Volume.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+2. Attach and Mount Volume: Attach the volume to the Lab EC2 instance using /dev/sdb, connect through Session Manager, and create an ext3 file system.
+
+3. Configure File System: Create /mnt/data-store, mount the volume, configure automatic mounting using /etc/fstab, and create file.txt.
+
+4. Create and Restore Snapshot: Create an EBS snapshot named My Snapshot, delete the original file, and create a new volume named Restored Volume from the snapshot.
+
+5. Verify and Submit: Attach the restored volume using /dev/sdc, mount it at /mnt/data-store2, verify that file.txt is recovered, and submit the lab to check grades.
 
 ---
 
@@ -92,19 +94,27 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ### Screenshot 1: EBS Volume Created
 
-(Insert Screenshot Here)
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/42de36af-f018-4883-8233-58e986da618c" />
+
 
 ---
 
 ### Screenshot 2: EBS Volume Attached to EC2
 
-(Insert Screenshot Here)
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/8bfeeb16-04fc-4a77-91eb-5bcc000f971a" />
+<img width="1917" height="948" alt="Screenshot 2026-11-23 011246" src="https://github.com/user-attachments/assets/cc75f0d2-f681-4913-b337-c4330909a5fd" />
+
+<img width="1910" height="945" alt="Screenshot 2026-11-23 010400" src="https://github.com/user-attachments/assets/5f401212-d851-4299-b926-db354c43c71a" />
+
 
 ---
 
 ### Screenshot 3: Mounted Volume with Data
+<img width="1919" height="848" alt="image" src="https://github.com/user-attachments/assets/d2382d3e-5024-46eb-a89a-0cc58da58d28" />
 
-(Insert Screenshot Here)
+
+<img width="1915" height="961" alt="image" src="https://github.com/user-attachments/assets/20441d76-d767-4361-a671-ca3543084df5" />
+
 
 ---
 
