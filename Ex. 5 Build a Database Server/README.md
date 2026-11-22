@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: KEERTHANA M
+* **Register Number**: 212225040185
+* **Date of Submission**: 21-11-26
 
 ---
 
@@ -82,13 +82,15 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. Create RDS Security Group: Create DB Security Group and allow MySQL/Aurora traffic on port 3306 from Web Security Group.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+2. Create DB Subnet Group: Create DB-Subnet-Group in Lab VPC using subnets 10.0.1.0/24 and 10.0.3.0/24 across two Availability Zones.
+
+3. Create RDS Database: Launch a MySQL Multi-AZ DB instance named lab-db with username main, password lab-password, and database name lab.
+
+4. Connect Web Application: Copy the RDS endpoint and connect the web application using the database name, username, and password. Test adding, editing, and deleting contacts.
+
+5. Submit and Verify: Submit the lab, check the Grades panel and Submission Report, and then end the lab.
 
 ---
 
@@ -96,19 +98,25 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-(Insert Screenshot Here)
+<img width="1257" height="552" alt="image" src="https://github.com/user-attachments/assets/7b7feb71-1ad2-4d34-a029-12e397b4013a" />
+
 
 ---
 
 ### Screenshot 2: Database Service Running
+<img width="1262" height="557" alt="image" src="https://github.com/user-attachments/assets/3c96d7e2-cb46-4957-bacb-891c93075f40" />
 
-(Insert Screenshot Here)
+
+<img width="1915" height="907" alt="image" src="https://github.com/user-attachments/assets/93b23f30-d310-4853-9bae-6e763dcc384e" />
 
 ---
 
 ### Screenshot 3: Sample Database and Table
+<img width="1130" height="590" alt="image" src="https://github.com/user-attachments/assets/d2eb946f-49fb-43ac-90fa-427924479357" />
 
-(Insert Screenshot Here)
+
+<img width="1903" height="903" alt="image" src="https://github.com/user-attachments/assets/9db6433a-5c3f-4911-89ac-26983f7c5b1a" />
+
 
 ---
 
